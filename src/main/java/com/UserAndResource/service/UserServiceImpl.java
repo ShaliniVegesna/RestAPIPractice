@@ -1,7 +1,7 @@
-package com.UserDemo.service;
+package com.UserAndResource.service;
 
-import com.UserDemo.model.User;
-import com.UserDemo.repository.UserRepository;
+import com.UserAndResource.model.User;
+import com.UserAndResource.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

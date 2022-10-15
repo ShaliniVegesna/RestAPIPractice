@@ -1,4 +1,4 @@
-package com.UserDemo.model;
+package com.UserAndResource.model;
 
 import lombok.*;
 

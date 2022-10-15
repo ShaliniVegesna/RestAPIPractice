@@ -1,7 +1,7 @@
-package com.UserDemo.controller;
+package com.UserAndResource.controller;
 
-import com.UserDemo.model.User;
-import com.UserDemo.service.UserService;
+import com.UserAndResource.model.User;
+import com.UserAndResource.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

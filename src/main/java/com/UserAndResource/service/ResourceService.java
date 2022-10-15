@@ -1,6 +1,6 @@
-package com.UserDemo.service;
+package com.UserAndResource.service;
 
-import com.UserDemo.model.Resource;
+import com.UserAndResource.model.Resource;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
