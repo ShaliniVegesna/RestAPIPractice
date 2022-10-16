@@ -33,8 +33,9 @@ import java.util.List;
         }
 
         @Override
-        public Resource create(Resource resource) {
-            return resourceRepository.save(resource);
+        public List <Resource> create(List<Resource> resources) {
+            resources.forEach(resource->resourceRepository.save(resource));
+            return getAll();
         }
 
     }

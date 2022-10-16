@@ -33,8 +33,9 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User create(User user) {
-        return userRepository.save(user);
+    public List <User> create(List<User> users) {
+        users.forEach(user->userRepository.save(user));
+        return getAll();
     }
 
 }

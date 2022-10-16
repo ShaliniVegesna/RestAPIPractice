@@ -8,5 +8,5 @@ import java.util.List;
 public interface UserService {
     List<User> getAll();
     ResponseEntity<Object> getById(Long id);
-    User create(User user);
+    List<User> create(List<User> users);
 }
