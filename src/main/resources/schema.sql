@@ -12,6 +12,7 @@ CREATE TABLE USERS(
  CREATE TABLE RESOURCES(
   id INT PRIMARY KEY,
   name VARCHAR(250) NOT NULL,
-  year_of_creation INT NOT NULL,
+  year_of_creation VARCHAR(250) NOT NULL,
   color VARCHAR(250) NOT NULL,
   pantone_value VARCHAR(250) NOT NULL);
+

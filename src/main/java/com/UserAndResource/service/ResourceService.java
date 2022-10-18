@@ -1,12 +1,14 @@
 package com.UserAndResource.service;
 
+import com.UserAndResource.dto.ResourceByIdDto;
+import com.UserAndResource.dto.ResourceResponseDto;
 import com.UserAndResource.model.Resource;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 
 import java.util.List;
 
 public interface ResourceService {
-    List<Resource> getAll();
-    ResponseEntity<Object> getById(Long id);
-    List<Resource> create(List<Resource> resources);
+    ResourceResponseDto getAll(int pageNo, int pageSize, String sortBy, String sortDir);
+    ResourceByIdDto getById(Long id);
+    HttpStatus create(List<Resource> resources);
 }
